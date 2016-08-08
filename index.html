@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RANK Framework</title>
+    <link href="css/rank.css" type="text/css" rel="stylesheet">
+    <link href="css/starter.css" type="text/css" rel="stylesheet">
+    <link href="css/page.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+   
+    <div id="page"> 
+    <!-- page structure using this Framework -->
+    <div class="rank"> 
+     <section class="row ">
+         <nav class="rank-col-3 first">
+            <div id="logo">
+                <img src="img/logo.png" atl="Rank Logo" class="responsive-img">
+            </div>
+             <h1>MENU</h1>
+            <h3>Select a menu item</h3>
+             <ul>
+                 <li><a href="#top">The RANK Framework</a></li>
+                 <li><a href="#g">The Grid System</a></li>
+                 <li><a href="#h">Paragraphs and Lists</a></li>
+                <li><a href="#h">Heading elements</a></li>
+                <li><a href="#h">Inline elements</a></li>
+                <li><a href="#address">The Address element</a></li>
+                <li><a href="#responsive">Responsive Image</a></li>
+                <li><a href="#form">Form Elements</a></li>
+                <li><a href="#button">Buttons</a></li>
+                <li><a href="#glyphicons">Glyphicons</a></li>
+                <li><a href="#table">Tables, Rows and Cells</a></li>
+                <li><a href="#helper">Helpers</a></li>
+                <li><a href="#noprint">No print class</a></li>
+
+             </ul>
+         
+         </nav>
+         
+        <main class="rank-col-9">
+        <a id="top"></a>
+         <h1>RANK Framework</h1>
+         <p>An essential supporting structure to build your Website</p>
+        <a href="css/rank.css" target='_blank' class="a-button">Download Rank Framework</a>
+         
+         <hr>
+     <h2>Example of a standard site extructure.</h2>
+     <p>This is a prevew of an standar page structure created with RANK. Wrapp you page in a <code>class="rank"</code>. To create columns you must create a row first using the <code>class="row"</code> class, then add <code>class="first"</code> to your first column in each row.</p>
+      
+    <div class="rank demo"> 
+    <div class="row">
+        <div class="rank-col-12 first">header</div>
+    </div>
+
+      <div class="row">
+        <div class="rank-col-9 first">&nbsp;</div>
+        <div class="rank-col-3">&nbsp;</div>
+      </div>
+
+      <div class="row">
+        <div class="rank-col-4 first">&nbsp;</div>
+        <div class="rank-col-4">&nbsp;</div>
+        <div class="rank-col-4">&nbsp;</div>
+      </div>
+      
+       <div class="row">
+        <div class="rank-col-12 first">Footer</div>
+    </div>
+    </div>
+    <p>The above example can be generated using this lines of code:</p>
+    <br>
+    <code>
+    &lt;div class="rank"&gt;<br>
+    &lt;div class="row"&gt;<br>
+        &lt;div class="rank-col-12 first"&gt;header&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+      &lt;div class="row"&gt;<br>
+        &lt;div class="rank-col-9 first"&gt;&amp;nbsp;&lt;/div&gt;<br>
+        &lt;div class="rank-col-3"&gt;&amp;nbsp;&lt;/div&gt;<br>
+      &lt;/div&gt;<br>
+      &lt;div class="row"&gt;<br>
+        &lt;div class="rank-col-4 first"&gt;&amp;nbsp;&lt;/div&gt;<br>
+        &lt;div class="rank-col-4"&gt;&amp;nbsp;&lt;/div&gt;<br>
+        &lt;div class="rank-col-4"&gt;&amp;nbsp;&lt;/div&gt;<br>
+      &lt;/div&gt;<br>
+       &lt;div class="row"&gt;<br>
+        &lt;div class="rank-col-12 first"&gt;Footer&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    </code>
+   
+   <hr>
+   <a id="g"></a>
+    <h2> The RANK Grid System </h2>
+            <p>The RANK Grid System uses 12 Rows that can be structured as follow.</p>
+    <div class="rank demo grid">
+
+      <div class="row">
+        <div class="rank-col-12 first">12</div>
+      </div>     
+
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-11">11</div>
+    </div>
+       
+
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-10">10</div>
+    </div>
+       
+
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-9">9</div>
+    </div>
+      
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-8">8</div>
+    </div>
+
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-7">7</div>
+    </div> 
+
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-6">6</div>
+    </div> 
+
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-5">5</div>
+    </div>          
+              
+    <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-4">4</div>
+    </div>     
+               
+      <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-3">3</div>
+    </div>
+        
+      <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-2">2</div>
+    </div>
+
+      <div class="row">
+        <div class="rank-col-1 first">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+        <div class="rank-col-1">1</div>
+     </div>
+      
+ </div><!-- End Rank -->
+  
+  <hr>
+
+<div class="rank page">
+      <div class="row">
+         <a id="h"></a>
+          <section class="rank-col-4 first">
+              <h2><span>Paragraph</span> element</h2>
+              <p>An example of the Paragraph element.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugiat ipsa atque, iure cumque dicta et reprehenderit. Delectus repellendus, voluptatem.</p>
+              <h2><span>List</span> element</h2>
+              <p>An example of a list element.</p>
+              <div style="float:left; width:50%">
+                  <ul><li>List Item </li><li>List Item </li><li>List Item </li><li>List Item </li></ul>
+              </div>
+              <div style="float:left; width:50%">
+                  <ol><li>List Item </li><li>List Item </li><li>List Item </li><li>List Item </li></ol>
+              </div>
+          </section> 
+         
+          <section class="rank-col-4">
+              <h2><span>Heading</span> elements</h2>
+              <p>The following code shows all the heading levels, in use.</p>
+              <h1>Heading h1</h1>
+              <h2>Heading h2</h2>
+              <h3>Heading h3</h3>
+              <h4>Heading h4</h4>
+              <h5>Heading h5</h5>
+              <h6>Heading h6</h6>
+          </section>
+          
+          <section class="rank-col-4">
+          <h2><span>Inline</span> elements</h2>
+              <p>A list of some inline element styles.</p>
+              » <a href="#">An href element</a><br>
+              » <b>Bolded text</b><br>
+              » <i>Italicised text</i><br>
+              » <u>Underlined text</u><br>
+              » <cite>Cite text</cite><br>
+              » <code>Code text</code><br>
+              » <q>Quotated text</q><br><br>
+              <p class="u-case"> » <code>u-case</code>: Uppercase</p>
+              <p class="l-case"> » <code>l-case</code>: Lowercase</p>
+              <p class="c-case"> » <code>c-case</code>: Capitalize</p>
+          </section>
+      </div>
+</div><!-- End Rank -->
+          
+     <hr> 
+             <a id="address"></a>
+            <section class="rank">
+                <div class="row">
+                    <div class="rank-col-6 first">
+                        <h2>The <span>Address</span> element</h2>
+                            <address>
+                               12345 Main St.<br>
+                                San Diego, CA 92121<br>
+                                U.S.A<br>
+                            </address>
+                    </div>
+                <a id="responsive"></a>    
+                    <div class="rank-col-6">
+                        <h2>The <span>Responsive Image</span> class</h2>
+                        <p><code>&lt;img class="responsive-img"/&gt;</code></p>
+                        <img src="img/resopnsive-demo.png" atl="Rank Logo" class="responsive-img">
+                    </div>
+                </div> 
+            </section>     
+             
+   <hr>  
+ 
+       <a id="form"></a>
+         <h2>Form Elements</h2>
+     <p>Below is an example of form elements</p>   
+        
+     <form>
+         <fieldset>
+            <legend>Field Set Example</legend>
+            <label>This is a label</label>
+            <input type="text" value="sample">
+            
+             <select name="cars">
+              <option value="volvo">Item 1</option>
+              <option value="saab">Item 2</option>
+              <option value="fiat">Item 3</option>
+              <option value="audi">Item 4</option>
+            </select>
+
+            <label>Select a Color: </label>
+            <label><input type="radio" name="colour" value="blue"> Blue </label>
+            <label><input type="radio" name="colour" value="red"> Red </label>
+            <label><input type="radio" name="colour" value="green"> Green </label><br>
+             
+           <label>Select color type: <input type="checkbox" name="colour-type" value="BW"> Black and White</label>
+             <label><input type="checkbox" name="colour-type" value="C" checked> Color</label><br>
+
+             <textarea name="message" rows="10" cols="30">Text area form field example
+             </textarea>
+            
+
+            <input type="button" value="Sample">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button >Click Me!</button>
+        </fieldset>
+     </form>
+     
+    <hr>
+     <a id="button"></a>
+      <h2>Buttons</h2>
+     <p>Extra small, Small, Normal, Large and an &lt;a&gt; tag.</p>
+        <a class="a-button" value="This is an a tag">As an &lt;a&gt; tag</a><code> class: a-button</code><br>
+        <button class="btn-large">Large</button><code> class: btn-large</code><br>
+        <button class="btn-normal">Normal</button><code> class: btn-normal</code><br>
+        <button class="btn-small">Small</button><code> class: btn-small</code><br>
+        <button class="btn-xsmall">Extra Small</button><code> class: btn-xsmall</code><br>
+        
+         <hr>
+         
+         <a id="glyphicons"></a>
+          <h2>Glyphicons</h2>
+         <p>Add icons to any HTML tag. This is an example of a button with icon</p>
+         <button class="btn-large typicons-archive">Icon Button</button> <code> class: btn-large typicons-archive</code><br>
+         
+         <p>Below is a list of some of supported icons: <b>Click on an icon to see it's class name</b></p>
+         <div class="responsive-table">
+                 <table style="width:100%; font-size:1.5em" id="icons">
+                  <tr>
+                    <td class="typicons-archive" style="background-color:#ebeeeb"></td>
+                    <td class="typicons-back"></td>
+                    <td class="typicons-backspace"></td>
+                    <td class="typicons-barChart"></td>
+                    <td class="typicons-cancel"></td>
+                    <td class="typicons-chat"></td>
+                    <td class="typicons-cog"></td>
+                  </tr>
+                   <tr>
+                    <td class="typicons-delete"></td>
+                    <td class="typicons-down"></td>
+                    <td class="typicons-edit"></td>
+                    <td class="typicons-expand"></td>
+                    <td class="typicons-export"></td>
+                    <td class="typicons-grid"></td>
+                    <td class="typicons-home"></td>
+                  </tr>
+                   <tr>
+                    <td class="typicons-info"></td>
+                    <td class="typicons-left"></td>
+                    <td class="typicons-right"></td>
+                    <td class="typicons-times"></td>
+                    <td class="typicons-tick"></td>
+                    <td class="typicons-volume"></td>
+                    <td class="typicons-warning"></td>
+                  </tr>
+                  <tr>
+                    <td class="typicons-zoomIn"></td>
+                    <td class="typicons-zoomOut"></td>
+                    <td class="typicons-plus"></td>
+                    <td class="typicons-next"></td>
+                    <td class="typicons-previous"></td>
+                    <td class="typicons-minus"></td>
+                    <td class="typicons-mail"></td>
+                  </tr>
+                </table>  
+                <div id="class-name"><code>Class: typicons-archive</code></div>
+            </div><br>
+         
+         <hr>
+         
+         <a id="table"></a>
+          <h2>Tables, Rows and Cells</h2>
+     <p>Responsive Striped rows and Bordered tables</p> 
+       <p>Responsive table<code> &lt;div class: responsive-table&gt; table... &lt;/div&gt;</code><br></p>
+       <p>Striped odd rows<code> &lt;table class: striped-table-odd&gt; tr td... &lt;/table&gt;</code><br></p>
+        <p>Striped even rows<code> &lt;table class: striped-table-even&gt; tr td... &lt;/table&gt;</code><br></p>
+       <p>Bordered table<code> &lt;table class: bordered-table&gt; tr td... &lt;/table&gt;</code><br></p> <br>
+       
+        <div class="responsive-table striped-table-odd bordered-table">
+                 <table style="width:100%">
+                  <tr>
+                    <th>Item 1</th>
+                    <th>Item 2</th>
+                    <th>Item 3</th>
+                  </tr>
+                  <tr>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                  </tr>
+                  <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                  </tr>
+                  <tr>
+                    <td>C1</td>
+                    <td>C2</td>
+                    <td>C3</td>
+                  </tr>
+                  <tr>
+                    <td>D1</td>
+                    <td>D2</td>
+                    <td>D3</td>
+                  </tr>
+                </table>  
+            </div>
+         <hr>
+           
+           
+         <section class="rank">
+                <div class="row">
+                    <div class="rank-col-6 first">
+                        <a id="helper"></a>
+                        <h2><span>Helpers</span> classes</h2>
+                        <h3>clear element all, left or right</h3>
+                        <p><code>&lt;div class="clear-all"/&gt;&lt;div/&gt;</code></p>
+                        <p><code>&lt;div class="clear-l"/&gt;&lt;div/&gt;</code></p>
+                        <p><code>&lt;div class="clear-r"/&gt;&lt;div/&gt;</code></p>
+                        <h3>Float element left or right</h3>
+                        <p><code>&lt;div class="float-l"/&gt;&lt;div/&gt;</code></p>
+                        <p><code>&lt;div class="float-r"/&gt;&lt;div/&gt;</code></p>
+                        <p><code>&lt;div class="no=float"/&gt;&lt;div/&gt;</code>
+
+                    </div>
+                    <div class="rank-col-6">
+                       <a id="noprint"></a>
+                        <h2><span> No Print</span> class</h2>
+                        <p><code>class="printer-ignore"</code></p>
+                    </div>
+                </div> 
+            </section>    
+            
+         </main>
+    </section></div>
+     <!-- END page structure using this Framework -->
+</div><!-- End Page -->
+
+<div id="to-top"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="js/page.js"></script>
+<script src="js/jquery.totop.js"></script>
+<script>$(function(){
+    $(window).toTop("grey");
+});</script>
+
+</body>
+</html>
