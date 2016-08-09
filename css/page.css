@@ -1,5 +1,5 @@
 body{
-    background-color: #567b8d;
+    background-color: #356075;
 }
 
 #page {
@@ -27,7 +27,7 @@ nav { background-color:#ebeeeb;
 nav ul li {margin-bottom: 10px}
 
 .demo .row > *{    
-    background-color: #b8c2b7;
+    background-color: #96aa94;
     border-radius: 3px;
     color: #fff;
     font-size: 0.8em;
@@ -37,6 +37,11 @@ nav ul li {margin-bottom: 10px}
 
 span{font-style: italic;}
 
+#class-name{border:1px solid #ccc; width: 75%; margin: auto; margin-top: 15px; text-align: center}
+
+#icons tr td{cursor: pointer; text-align: center}
+
+/* media screen for demo table only not for rank.css*/
 @media only screen and (max-width: 480px) {
     .grid .row div:not(.rank-col-12){ 
         display: none;
@@ -44,4 +49,4 @@ span{font-style: italic;}
     
     .row { overflow:inherit; margin-bottom: 0;}
     
-}/* End @media 768 
+}/* End @media 480 

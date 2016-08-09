@@ -1,3 +1,13 @@
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+  margin-right: 11px;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: #2b2929;
@@ -13,7 +23,7 @@ h4{}
 h5{}
 h6{}
 
-p{ font-size: 0.9em; margin: 5px 0}
+p{ font-size: 0.9em; margin: 15px 0}
 
 a {text-decoration: none; 
     color:#567b8d;
@@ -23,7 +33,7 @@ a {text-decoration: none;
     transition: color ease-out 0.1s;
 }
 
-a:hover{color:#d6a980;}
+a:hover{color:#d98a3e;}
 
 code {
     font-family: monospace;
@@ -63,8 +73,15 @@ address {
     font-style: italic;
     color: #567b8d;
 }
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
 hr{    
+    
+    
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -154,7 +171,7 @@ input[type="checkbox"]{
 select{width: 99%;}
 select options{}
 input[type="button"],input[type="submit"],input[type="reset"], button, .a-button, .btn-large, .btn-normal, .btn-small,.btn-xsmall{    
-    background-color: #98a59b;
+    background-color: #6d8571;
     border: 0 none;
     border-radius: 5px;
     color: #fff;
@@ -174,7 +191,7 @@ input[type="button"],input[type="submit"],input[type="reset"], button, .a-button
 }
 .a-button:hover{
     color: #fff;
-    background-color: #d5a87f;
+    background-color: #d98a3e;
 }
 
 .btn-large{font-size: 1.4em; padding: 12px 43px;}
@@ -207,12 +224,13 @@ button:hover,
 .btn-large:hover, 
 .btn-normal:hover, 
 .btn-small:hover, 
-.btn-xsmall:hover{ color: #fff; background-color: #d5a87f; }
+.btn-xsmall:hover{ color: #fff; background-color: #d98a3e; }
 
 table td{padding-left: 1%;}
 .responsive-table{overflow-x:auto}
 .bordered-table{border: 1px solid #ccc}
-.striped-table tr:nth-child(odd){ background-color: #ebeeeb;}
+.striped-table-odd tr:nth-child(odd){ background-color: #ebeeeb;}
+.striped-table-even tr:nth-child(even){ background-color: #ebeeeb;}
 
 
 .clear-all{clear: both}

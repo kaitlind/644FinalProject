@@ -1,9 +1,12 @@
 // APP: totop.js
 // Authors: RANK framework Team
+// Description:  
 
 (function($) {
     $.fn.toTop = function(color) {
-
+        if(color == undefined){color = "grey"};
+        $("body").append("<div id='to-top'></div>");
+        
         var btt = $('#to-top'); 
         btt.css({
                 "bottom":"20px",
