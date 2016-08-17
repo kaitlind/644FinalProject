@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Menu</title>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="mobile.js"></script>
+    <style>
+        li {
+           margin-left: 10px; color: black; border: solid 2px black; border-radius: 5px; padding: 5px; display: inline-block; text-decoration: none;
+                list-style: none;
+            }
+        a { color: black; text-decoration: none;}
+              
+            
+         #hide { display: none;}
+                  
+     @media (max-width: 600px) {
+  
+    #mainMenu {  position: relative; /*unicode menu*/ display: inline-block;}
+    #mainMenu ul.desktopMenu {display: none;}
+             
+    #mainMenu ul { width:100%; position:absolute; top:120%; left:0px; padding:10px 18px; box-shadow:0px 1px 1px rgba(0,0,0,0.15); border-radius:3px; background:#303030; margin-top: 0px;
+         }
+         
+ #mainMenu ul:after {
+              width:0px; height:0px; position:absolute; top:0%; left:22px; content:''; transform:translate(0%, -100%);  border-left:7px solid transparent; border-right:7px solid transparent; border-bottom:7px solid #303030;
+         }
+ #mainMenu li {
+             margin:5px 0px 5px 0px; float:none; display:block;
+         }
+ #mainMenu a { display:block; color: white; }
+ #hide {
+        padding:20px; float:left; display:inline-block; box-shadow:0px 1px 1px rgba(0,0,0,0.15); border-radius:3px; background:#303030; text-shadow:0px 1px 0px rgba(0,0,0,0.5); color:#777; font-size:20px; transition:color linear 0.15s;
+         }
+}
+        </style>
+        <script>
+ $(function() {
+      $("nav").dropdownMobileMenu();
+    
+        });
+</script>
+</head>
+<body>
+   <nav id="mainMenu">
+			<ul class="desktopMenu">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="location.html">Location</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="shopping.html">Shopping </a></li>
+			</ul>
+            <a id="hide" href="#">&#9776; Main Menu</a>
+		</nav>   
+</body>
+</html>   
