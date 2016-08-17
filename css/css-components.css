@@ -5,105 +5,43 @@ body {
 }
 
 /* tab bar */
-:focus {
-    outline-color: transparent;
-    outline-style: none;
+.tabClass {
+  position: relative;   
+  min-height: 200px; /* text box height */
+  clear: both;
+  margin: 25px 0;
 }
-
-.full {
-    width: 100%
+.tab {
+  float: left;
 }
-
-input {
-    position: absolute; /* takes out spacing between tabs */
-    overflow: hidden; /* hide overflow content */
-	clip: rect(0 0 0 0);
-	margin: 0;
-	padding: 0;
-    border: 0;
-    opacity: 0.001;
+.tab label {
+  background: #888; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
 }
-
-label {
-    position: relative;
+.tab [type=radio] { /* hides but still uses functionality of radio buttons */
+  display: none;   
 }
-
-.title {
-    letter-spacing: -.05em;
+.tabContent {
+  position: absolute;
+  top: 28px; /* space for tab and tab text box */
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
 }
-
-.spacer {
-    padding: 25px 0;
+[type=radio]:checked ~ label { /* (~) tilda symbol lets you target attributes that have a spaced/separated list of values */
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
 }
-
-.tab-bar {
-    display: table;
-    table-layout: fixed;
-    white-space: no-wrap;
-    font-size: 0;
-}
-
-.tab-bar--item {
-    display: table-cell;
-    width: auto;
-    /* will reset what was removed by tab bar */
-    font-size: 16px;
-}
-
-.tab-bar--button {
-    position: relative; /* for box shadow to show on all sides of buttons */
-    display: inline-block;
-    overflow: hidden;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    padding: 0 1.25rem;
-    border: none;
-    border-top: 1px solid #a5a8a8;
-    background-color: #e5e9e8;
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    -webkit-box-shadow: inset 0 1px #fff;
-    box-shadow: inset 0 1px #fff;
-    color: #454545;
-    vertical-align: top;
-    text-overflow: ellipsis;
-    text-shadow: 0 1px #fff;
-    white-space: nowrap;
-    letter-spacing: 1px;
-    font: inherit;
-    line-height: 3rem;
-    cursor: default;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -o-text-overflow: ellipsis;
-}
-
-:checked + .tab-bar--button,
-.tab-bar--button:active,
-.tab-bar--button.is-active {
-    color: #0083e8;
-    background-color: #e0f0fa;
-    -webkit-box-shadow: inset 1px 1px rgba(0,0,0,0.12);
-    box-shadow: inset 0 0 2px #c0ced8;
-}
-
-.tab-bar--item:disabled,
-.tab-bar--item.is-disabled {
-    opacity: 0.3;
-    cursor: default;
-    pointer-events: none;
-}
-
-.tab-bar--button:focus {
-    -webkit-box-shadow: 0 0 0 2px #6fb5f1;
-    box-shadow: 0 0 0 2px #6fb5f1;
-    z-index: 1;
+[type=radio]:checked ~ label ~ .tabContent {
+  z-index: 1;
 }
 /* end tab bar */
 
@@ -215,87 +153,6 @@ h1 {
 }
 /* end pop up */
 
-/* carousel slider */
-#cssSlider {
-    width: 700px;
-    height: 310px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-}
-
-#cssSlider figure {
-    width: 700px;
-    height: 310px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: -720px;
-    z-index: 1;
-    /*transitions*/
-    transition: all linear 0.5s;
-    -o-transition: all linear 0.5s;
-    -moz-transition: all linear 0.5s;
-    -webkit-transition: all linear 0.5s;
-}
-
-#cssSlider figure:target {
-    left: 0;
-}
-
-#cssSlider figure:first-child {
-    left: 0;
-}
-
-#cssSlider figure figcaption {
-    position: absolute;
-    bottom: 0;
-    right: 700px;
-    z-index: 2;
-    color: #fff;
-    padding: 10px 20px;
-    width: 660px;
-    background: #000;
-    /*transitions*/
-    transition: all linear 1s;
-    -o-transition: all linear 1s;
-    -moz-transition: all linear 1s;
-    -webkit-transition: all linear 1s;
-    opacity: 0;
-}
-
-#cssSlider figure:target figcaption {
-    right: 0;
-    opacity: 1;
-}
-
-#sliderPagination {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    z-index: 10;
-}
-
-#sliderPagination a {
-    text-decoration: none;
-    background: rgba(255,255,255,0.5);
-    padding: 4px 8px;
-    color: #333;
-    border-radius: 20px;
-    /* transitions */
-    transition: all linear 0.5s;
-    -o-transition: all linear 0.5s;
-    -moz-transition: all linear 0.5s;
-    -webkit-transition: all linear 0.5s;
-}
-
-#sliderPagination a:hover {
-    background: #fff;
-    color: #666;
-    width: auto;
-}
-/* end carousel slider */
-
 /* drop down menu */
 nav ul {
 	text-shadow: 0 1px 0 #FFF;
@@ -378,3 +235,27 @@ nav li ul a:hover {
 }
 /* end drop down menu */
 
+/* image gallery */
+.img {
+    margin: 5px;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #999;
+    float: left;
+    width: 180px;
+}
+
+.img:hover {
+    border: 1px solid #000;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+}
+/* end image gallery */
