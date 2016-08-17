@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validate Form Elements</title>
+        <!--Must include jquery library like the one below-->
+        <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+        <!--Must include jquery validation library like the one below-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+        <!--optional-->
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/additional-methods.min.js"
+type="text/javascript"></script>
+        
+        <style>
+  body {
+          font-family: Arial, Sans-serif;
+       }
+label.error {
+         color:red;
+         font-family:Arial, Sans-serif;
+         margin-left: 10px;
+            }
+#myform {
+     border: 1px solid #DFDCDC;
+     margin: 10px;
+    padding: 10px;
+    width: 350px;
+    background-color: bisque;
+    border-radius: 8px;
+            }
+            hr {
+                margin-top: 10px;
+                margin-bottom: 10px
+            }            
+        </style>
+        
+         <script>
+             /*uncomment the plugin you choose*/
+ $(function() {
+     /*uncomment the plugin you choose*/
+     /*$("#selections").validateSelection();*/
+     /*$("#inputs").validateInput();*/
+    /* $("#emails").validateEmail();*/
+     /*$("#phoneNo").validatePhoneNumber();*/
+     /*$("#container").validateRadioBtn();*/
+     $("#wrap").validateCheckBox();
+        });
+</script>
+        
+    </head>
+    <body>
+        
+        
+        <h2>Validate Form Elements</h2>
+        <p>validate different elements that you include in your form.</p>
+        <p> Uncomment the the plugins inside document ready function( $(function() ) before trying the plugin of your selection </p>
+
+        <form method="post" id="myform" name="myform" >
+            <div id="selections">
+        <label>Selections:</label>
+            
+
+            <select  name='options' id="options">
+              <option value="">Choose one of the options</option>
+              <option value="option1">Option One</option>
+              <option value="option2">Option Two</option>
+              <option value="option3">Option Three</option>
+              <option value="option4">Option Four</option>
+            </select>
+        </div>
+        <hr>
+        <p id="inputs">
+            Input One: <input type="text" name="inputOne"><br><br>
+            Input Two: <input type="text" name="inputTwo"><br>
+            </p>
+            <hr>
+            <p id="emails">
+                Email: <input type="email" name="email"><br><br>
+            </p>
+            <hr>
+            <p id="phoneNo">
+                Phone: <input placeholder="999 999 9999" type="tel" name="tel"><br><br>
+            </p>
+            <hr>
+        <p id="container">
+            <input type="radio" name="radio" value="radio1"> Radio One<br>
+            <input type="radio" name="radio" value="radio2"> Radio Two<br>
+            <input type="radio" name="radio" value="radio3"> Radio Three
+            </p>
+            <hr>
+            <p id="wrap">
+            <input type="checkbox" name="checkB" value="checkbox1">Checkbox one<br>
+    		<input type="checkbox" name="checkB" value="checkbox2">Checkbox Two<br>
+    		<input type="checkbox" name="checkB" value="checkbox3">Checkbox Three<br>
+    		<input type="checkbox" name="checkB" value="checkbox4">Checkbox Four<br>
+    		</p>
+       <hr>
+        <button value="submit" type="submit" id="submitF">Submit Form</button>
+            </form>
+    
+    
+        <script src="plugin.js"></script>
+    </body>
+</html>
