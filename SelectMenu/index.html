@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Select Menu</title>
+
+ 
+        <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+        <style>
+  body {
+          font-family: Arial, Sans-serif;
+       }
+
+li {
+                margin-left: 10px;
+                color: black;
+                border: solid 2px black;
+                border-radius: 5px;
+                padding: 5px;
+                display: inline-block;
+                text-decoration: none;
+            }
+            a {
+              color: black;
+              text-decoration: none;
+        
+            }
+    
+nav select {
+  display: none;
+}
+@media (max-width: 600px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
+        </style>
+        <script>
+ $(function(){
+    $("nav").selectMobileMenu();
+
+        });
+</script>
+    </head>
+<body>
+
+<nav> 
+
+  <ul> 
+    <li><a href="#" class="active">Menu one</a></li> 
+    <li><a href="#">Menu two</a></li> 
+    <li><a href="#">Menu Three</a></li> 
+    <li><a href="#">Menu Four</a></li> 
+    <li><a href="#">Menu Five</a></li> 
+  </ul> 
+
+</nav>
+    
+    <script src="dropdown.js"></script>
+    </body>
+</html>
